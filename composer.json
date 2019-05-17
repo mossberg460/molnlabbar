@@ -1,0 +1,15 @@
+{
+    "name": "mau/labbar",
+    "description": "Beskrivning",
+    "require": {
+        "catfan/medoo": "^1.6",
+        "monolog/monolog": "^1.24"
+    },
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Marre",
+            "email": "Marre@kingmail.com"
+        }
+    ]
+}
