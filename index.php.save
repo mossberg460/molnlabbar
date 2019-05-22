@@ -1,0 +1,22 @@
+<?php
+require 'vendor/autoload.php';
+
+use Monolog\Logge
+
+$log = new Logger('Laboration 4');
+$log->pushHandler(new StreamHandler('greetings.log', Logger::INFO));
+
+$name = $_GET['name'];
+$log->info($name);
+?>
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Testing, testing</title>
+</head>
+<body>
+<?php
+ echo "Hello, " . $name;
+?>
+</body>
+</html>

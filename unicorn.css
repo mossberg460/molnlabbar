@@ -1,0 +1,60 @@
+.anyClass {
+  height:150px;
+  overflow-y: scroll;
+}
+
+.detailContainer {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 300px auto;
+  width: 500px;
+  align-self: center;
+  vertical-align: 30%;
+  top: 50%;
+  left: 50%;
+}
+
+.centerContainer {
+  display: flex;
+  align-items: center;
+  jusity-content: center;
+}
+
+.wrapper {
+  margin-top: 50px;
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: [col1-start] 300px [col2-start] 308px [col2-end];
+  grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+  background-color: #fff;
+  color: #444;
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.275);
+  color: rgb(19, 19, 19);
+  padding: 4px;
+}
+
+.a {
+  grid-column: col1-start / col2-end;
+  grid-row: row1-start;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: rgba(83, 83, 83, 0.275);
+}
+
+.b {
+  grid-column: col2-start;
+  grid-row: row2-start / row2-end;
+}
+
+.c {
+  grid-column: col1-start / col2-start;
+  grid-row: row2-start;
+}
+
+.d {
+  grid-column: col1-start / col2-start;
+  grid-row: row2-end;
+}
